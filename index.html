@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="memegen.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Borel">
+</head>
+<body>
+<header>
+  making MEMEories
+  <h4>add your own image and text below to create a meme!</h4>
+</header>
+<div id="urlOptions">
+  <h6>Here are some options to get you started!<br>Right click the picture, then copy and paste the image address to the Image URL window below </h6>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/Disaster-Girl.jpeg"
+    target="blank"><img src="Disaster-Girl.jpeg"></a>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/Oprah-You-Get-A.jpeg"
+    target="blank"><img src="Oprah-You-Get-A.jpeg"></a>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/Oprah-You-Get-A.jpeg"
+    target="blank"><img src=""></a>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/Flex-Tape.jpeg"
+    target="blank"><img src="Flex-Tape.jpeg"></a>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/Roll-Safe-Think-About-It.jpeg"
+  target="blank"><img src="Roll-Safe-Think-About-It.jpeg"></a>
+  <a class = "memeOptionLinks" href="http://127.0.0.1:5500/But-Thats-None-Of-My-Business.jpeg"
+  target="blank"><img src="But-Thats-None-Of-My-Business.jpeg"></a>
+</div>
+
+<form action="" id="memegen">
+    <div class="memeImgDiv">
+      <label for="">IMAGE URL:
+        <input type="url" name="imgURL" placeholder="enter a valid image url">
+      </label>
+    </div>
+    <div class="topDiv">
+      <label for="">TEXT ON TOP:
+        <input type="text" name="topText"
+        placeholder="this text will appear on the top of the meme">
+      </label>
+    </div>
+    <div class="bottomDiv">
+      <label for="">TEXT ON BOTTOM:
+        <input type="text" name="bottomText"
+        placeholder="this text will appear on the bottom of the meme">
+      </label>
+    </div>
+    <button type="submit">submit</button>
+  </form>
+</div>
+<h6>(click on meme to delete)</h6>
+
+<div id="result">
+
+</div>
+
+<script src="memegen.js"></script>
+</body>
+</html>
